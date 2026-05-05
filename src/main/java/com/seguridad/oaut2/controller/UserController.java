@@ -16,12 +16,14 @@ public class UserController {
 		String email = oidcUser.getEmail();
 		String foto = oidcUser.getPicture();
 		String googleId = oidcUser.getSubject();
+		String birthdate = oidcUser.getBirthdate();
 
 		return Map.of(
 			"nombre", nombre,
 			"email", email,
 			"foto", foto,
-			"googleId", googleId
+			"googleId", googleId,
+			"birthdate", birthdate	
 		);
 	}
 }
